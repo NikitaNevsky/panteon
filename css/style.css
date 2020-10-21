@@ -1,0 +1,269 @@
+/*----------------------- Шрифты ------------------------*/
+
+@font-face {
+    font-family: 'Legan';
+    src: url('../fonts/Legan.eot');
+    src: url('../fonts/Legan.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Legan.woff2') format('woff2'),
+        url('../fonts/Legan.woff') format('woff'),
+        url('../fonts/Legan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*----------------------- Спецификации ------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Legan';
+    background: #fff;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 160%;
+    color: #333;
+}
+
+ul, li, li, a, input, textarea, label, div {
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a, button {
+    transition: all .2s ease-in;
+}
+
+.container {
+    position: relative;
+    padding: 0 60px;
+    margin: auto;
+}
+
+/*----------------------- Header ------------------------*/
+
+.main {
+    background: url('../images/main-bg.jpg') no-repeat center / cover;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    background-size: 200%;
+    background-position-y: -100px;
+    background-position-x: 60%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.header-content .logo {
+    transition: all .3s ease;
+}
+
+.header-content .logo a {
+    display: flex;
+}
+
+.header-content .logo:hover {
+    opacity: 0.7;
+}
+
+.header-content .logo img {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu__item {
+    margin-right: 24px;
+}
+
+.menu__item a {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu__item a:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #37BAEA;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.3s ease-in-out;
+
+}
+
+.menu__item a:hover {
+    color: #37BAEA;
+}
+
+.menu__item a:hover:before {
+    width: 100%;
+}
+
+.buy__btn {
+    padding: 8px 12px;
+    background: #37BAEA;
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.buy__btn:hover {
+    background: #2f9cc4;
+}
+
+/*----------------------- Promo ------------------------*/
+
+.promo-content {
+    display: flex;
+    align-items: center;
+    padding: 90px 0 168px 74px;
+}
+
+.promo__text {
+    font-weight: normal;
+    font-size: 200px;
+    line-height: 200px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.promo__left--bottom {
+    display: flex;
+}
+
+.promo__left--image {
+    box-shadow: 0px 0px 4px 20px rgba(55, 186, 234, 0.25);
+    border-radius: 50%;
+    width: 316px;
+    height: 316px;
+    animation: radial-pulse 1s infinite;
+}
+
+.promo__left--image img {
+    width: 100%;
+}
+
+@keyframes radial-pulse {
+    0% {
+        box-shadow: 0px 0px 4px 0px rgba(55, 186, 234, 0.25);
+    }
+   
+    100% {
+        box-shadow: 0px 0px 4px 20px rgba(55, 186, 234, 0.25);
+    }
+  }
+
+.promo__left--bottom .promo__text {
+    font-size: 400px;
+    line-height: 400px;
+}
+
+.promo__right {
+    margin-bottom: 52px;
+    transform: rotate(90deg);
+    height: 70px;
+    margin-left: -16%;
+}
+
+.promo__right--text {
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 0.25em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.scroll__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    text-decoration: none;
+}
+
+.scroll__btn span {
+    display: block;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+    margin-right: 8px;
+    transition: all .3s ease;
+}
+
+.scroll__btn span:hover {
+    color: #37BAEA;
+}
+
+.scroll__btn svg path {
+    transition: all .3s ease;
+}
+
+.scroll__btn:hover svg path {
+    fill: #37BAEA;
+}
+
+.skills {
+    display: block;
+    padding: 72px 0;
+}
+
+.skills__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 84px;
+}
+
+.skills__item:last-child {
+    margin-bottom: 0;
+}
+
+.skills__item--info {
+    max-width: 480px;
+}
+
+.skills__item--title {
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 70px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.skills__item--text {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+}
